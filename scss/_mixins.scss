@@ -5,73 +5,68 @@
   list-style-type: none;
 }
 
-@mixin box ($width, $height, $color) {
-  width:$width;
-  height:$height ;
-  background-color:$color ;
-}
-
-@mixin boxing ($width:400px, $height:300px, $color:red) {
-  width:$width;
-  height:$height ;
-  background-color:$color ;
-}
-
 @mixin text-ellipses {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-@mixin display-justfiy-alain ($content:flex ,$centr:space-between,$middle:center) {
+@mixin display-justfiy-alain ($content:flex, $centr:space-between, $middle:center) {
   display: $content;
-  justify-content:$centr ;
-  align-items:$middle ;
+  justify-content: $centr;
+  align-items: $middle;
 }
 
-@mixin mobile-first($min){
+@mixin mobile-first($min) {
   @media only screen and (min-width: $min) {
     @content;
   }
 }
 
-@mixin min-max($min, $max){
+@mixin min-max($min, $max) {
   @media only screen and (min-width: $min) and (max-width: $max) {
     @content;
   }
 }
-@mixin flexbox($justify:space-between, $align:center, $direction){
+
+@mixin flexbox($justify:space-between, $align:center, $direction) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
 }
-%button-unstyle{
+
+%button-unstyle {
+  padding: 0px;
   background-color: transparent;
   border: none;
 }
+
 @mixin link-unstyle($display:inline-block) {
   display: $display;
   text-decoration: none;
 }
-@mixin psevdoelements($display:inline-block, $width, $height, $content: ""){
+
+@mixin psevdoelements($display:inline-block, $width, $height, $content: "") {
   display: $display;
   width: $width;
   height: $height;
   content: $content;
 }
-@mixin  bgRetinaImages{
-  @media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (   min--moz-device-pixel-ratio: 2),
-  only screen and (     -o-min-device-pixel-ratio: 2/1),
-  only screen and (        min-device-pixel-ratio: 2),
-  only screen and (                min-resolution: 192dpi),
-  only screen and (                min-resolution: 2dppx) {
+
+@mixin bgRetinaImages {
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
     @content;
   }
 }
-@mixin typography-styles($style:normal, $size:16px, $line-height:1.15,$weight:400, $text-align:left, $color:#000) {
+
+@mixin typography-styles($style:normal, $size:16px, $line-height:1.15, $weight:400, $text-align:left, $color:#000) {
   font-style: $style;
   font-size: $size;
   line-height: $line-height;
@@ -79,8 +74,25 @@
   text-align: $text-align;
   color: $color;
 }
-%text-end{
+
+%text-end {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@mixin nav-link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@mixin font-family-Ibarra {
+  font-family: "Ibarra Real Nova", "Times New Roman", serif;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 700;
+  letter-spacing: -0.357143px;
+  color: var(--title-color);
 }

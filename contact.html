@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Minimalist</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body class="site-body">
+    <!-- HEADER START -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrap">
+                <a class="logo" href="./index.html">
+                    <img src="./images/logo.svg" width="60" height="32" alt="Minimalist site's logo">
+                </a>
+                <button class="header-wrap__btn"></button>
+                <nav class="header-wrap__site-nav site-nav">
+                    <ol class="site-nav__list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="./portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="site-nav__item ">
+                            <a class="site-nav__link site-nav__link--active" href="./contact.html">CONTACT ME</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+        <h2 class="visually-hidden">Contact</h2>
+        <!-- SECTION GET START -->
+        <section class="get">
+            <div class="container">
+                <div class="get-wrap">
+                    <h3 class="get-wrap__title">Get in Touch</h3>
+                    <div class="get-wrap__text-box">
+                        <p class="get-wrap__text">
+                            I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.
+                        </p>
+                        <ul class="get-wrap__list">
+                            <li class="get-wrap__item">
+                                <a class="get-wrap__link" target="blank" href="#">
+                                    <img src="./images/github.svg" 
+                                    width="25"
+                                    height="24"
+                                    alt="Github">
+                                </a>
+                            </li>
+                            <li class="get-wrap__item">
+                                <a class="get-wrap__link" target="blank" href="#">
+                                    <img src="./images/twitter.svg" 
+                                    width="24"
+                                    height="20"
+                                    alt="Twitter">
+                                </a>
+                            </li>
+                            <li class="get-wrap__item">
+                                <a class="get-wrap__link" target="blank" href="#">
+                                    <img src="./images/in.svg" 
+                                    width="24"
+                                    height="24"
+                                    alt="Linkedin">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION GET END -->
+
+        <!-- SECTION CONTACT START -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact-wrap">
+                    <h3 class="contact-wrap__title">Contact Me</h3>
+                    <form class="contact-wrap__form" method="post" action="https://echo.htmlacademy.ru/courses" autocomplete="off">
+                        <label class="contact-wrap__label">
+                            Name
+                            <input class="contact-wrap__input" minlength="2"
+                            maxlength="50" type="text" placeholder="Jane Appleseed" name="user_name" required>
+                            <span class="contact-wrap__tiny">This field is required</span>
+                        </label>
+                        <label class="contact-wrap__label">
+                            Email Address
+                            <input class="contact-wrap__input" type="email" minlength="10"
+                            maxlength="50" placeholder="email@example.com" name="user_email" required>
+                            <span class="contact-wrap__tiny">This field is required</span>
+                        </label>
+                        <label class="contact-wrap__label">
+                            Message
+                            <textarea class="contact-wrap__textarea" placeholder="How can I help?" name="user_message" minlength="5" required></textarea>
+                            <span class="contact-wrap__tiny">This field is required</span>
+                        </label>
+                        <button class="contact-wrap__btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION CONTACT END -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <a class="logo-footer" href="./index.html">
+                    <img src="./images/logo-footer.svg" width="60" height="32" alt="Minimalist site's logo">
+                </a>
+                <ol class="footer-wrap__list">
+                    <li class="footer-wrap__item">
+                        <a class="footer-wrap__link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="footer-wrap__item">
+                        <a class="footer-wrap__link" href="./portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="footer-wrap__item">
+                        <a class="footer-wrap__link" href="./contact.html">CONTACT ME</a>
+                    </li>
+                </ol>
+                <ul class="footer-wrap__icon-list">
+                    <li class="footer-wrap__icon-item">
+                        <a class="footer-wrap__icon__link" href="#" target="blank">
+                            <img src="./images/footer-github.svg" width="25" height="24" alt="Github">
+                        </a>
+                    </li>
+                    <li class="footer-wrap__icon-item">
+                        <a class="footer-wrap__icon__link" href="#" target="blank">
+                            <img src="./images/footer-twitter.svg" width="24" height="20" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="footer-wrap__icon-item">
+                        <a class="footer-wrap__icon__link" href="#" target="blank">
+                            <img src="./images/footer-in.svg" width="24" height="24" alt="Linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <!-- FOOTER END -->
+</body>
+
+</html>

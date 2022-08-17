@@ -1,3 +1,122 @@
 /* HEADER START */
+.site-header {
+    padding: 32px 0px 40px 0px;
+}
+
+.container {
+    padding: 0px 32px;
+}
+
+.header-wrap {
+    position: relative;
+    @include display-justfiy-alain;
+}
+
+.site-header--open .header-wrap__btn {
+    width: 18px;
+    height: 19px;
+    background-image: url("../images/x.svg");
+}
+
+.body--active {
+    overflow: hidden;
+}
+
+.header-wrap__btn {
+    background-image: url("../images/hamburg.svg");
+    width: 24px;
+    height: 13px;
+    @extend %button-unstyle;
+}
+
+.site-header--open .site-nav {
+    display: block;
+}
+
+.site-nav {
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 0px;
+    z-index: 5;
+    width: 223px;
+    padding: 40px 63px;
+    background-color: var(--title-color);
+    animation-name: slidedown;
+    animation-duration: 1.5s;
+}
+
+.site-nav__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.site-nav__link {
+    display: block;
+    @include nav-link;
+    text-align: center;
+    color: var(--white-color);
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-250px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .site-header {
+        padding: 64px 0px 47px 0px;
+    }
+
+    .container {
+        padding: 0px 40px;
+    }
+
+    .header-wrap__btn {
+        display: none;
+    }
+
+    .site-nav {
+        position: static;
+        display: block;
+        width: 310px;
+        padding: 0px;
+        background-color: transparent;
+        animation: none;
+    }
+
+    .site-nav__list {
+        display: flex;
+    }
+
+    .site-nav__item {
+        &:not(:last-child) {
+            margin: 0px 42px 0px 0px;
+        }
+    }
+
+    .site-nav__link {
+        color: var(--title-color);
+    }
+
+    .site-nav__link--active {
+        color: var(--green-color);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .site-header {
+        padding: 64px 0px 54px 0px;
+    }
+    .container {
+        padding: 0px 20px;
+    }
+}
 
 /* HEADER END */

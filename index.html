@@ -5,24 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Template</title>
+  <title>Minimalist</title>
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
+<body class="site-body">
   <!-- HEADER START -->
   <header class="site-header">
     <div class="container">
       <div class="header-wrap">
-        <a href="./index.html">
-          <img src="" 
-          width=""
-          height=""
-          alt=" site's logo">
-          <nav class="header-wrap__site-nav site-nav">
-
-          </nav>
+        <a class="logo" href="./index.html">
+          <img src="./images/logo.svg" width="60" height="32" alt="Minimalist site's logo">
         </a>
+        <button class="header-wrap__btn"></button>
+        <nav class="header-wrap__site-nav site-nav">
+          <ol class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="./index.html">HOME</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./contact.html">CONTACT ME</a>
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
   </header>
@@ -30,23 +38,121 @@
 
   <!-- MAIN START -->
   <main>
-    <!-- SECTION START -->
-    <section class="">
+    <!-- SECTION HERO START -->
+    <section class="hero">
       <div class="container">
-
+        <div class="hero-wrap">
+          <div class="hero-wrap__img-box"></div>
+          <div class="hero-wrap__box">
+            <h1 class="hero-wrap__title">
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h1>
+            <a class="hero-wrap__link" href="#about">ABOUT ME</a>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- SECTION START -->
+    <!-- SECTION HERO END -->
+
+    <!-- SECTION ABOUT START -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-wrap">
+          <div class="about-wrap__img-box">
+            <picture>
+              <!-- webP -->
+              <source type="image/webp" media="(min-width: 1000px)" srcset="
+              ./images/man-d.webp 1x,
+              ./images/man-d@2x.webp 2x
+              ">
+              <source type="image/webp" media="(min-width: 700px)" srcset="
+              ./images/man-t.webp 1x,
+              ./images/man-t@2x.webp 2x
+              ">
+              <source type="image/webp" srcset="
+              ./images/man-m.webp 1x,
+              ./images/man-m@2x.webp 2x
+              ">
+              <!-- jpg -->
+              <source media="(min-width: 1100px)" srcset="./images/man-d.jpg 1x, ./images/man-d@2x.jpg 2x">
+              <source media="(min-width: 700px)" srcset="./images/man-t.jpg 1x, ./images/man-t@2x.jpg 2x">
+              <img class="about-wrap__img-m" src="./images/man-m.jpg" width="311" height="271"
+                srcset="./images/man-m.jpg 1x, ./images/man-m@2x.jpg 2x" alt="Men">
+            </picture>
+          </div>
+          <div class="about-wrap__box">
+            <h2 class="about-wrap__title">About Me</h2>
+            <p class="about-wrap__text">
+              I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
+              accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I
+              mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy
+              working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love
+              being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+            </p>
+            <a class="about-wrap__link" href="./portfolio.html">GO TO PORTFOLIO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION ABOUT END -->
+    <!-- ARTICLE START -->
+    <article class="interested">
+      <div class="container">
+        <div class="interested-wrap">
+          <div class="interested-wrap__title-box">
+            <h2 class="interested-wrap__title">
+              Interested in doing a project together?
+            </h2>
+          </div>
+          <span class="interested-wrap__line"></span>
+          <div class="interested-wrap__box-link">
+            <a class="interested-wrap__link" href="./contact.html">CONTACT ME</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- ARTICLE END -->
     <!-- MAIN END -->
 
     <!-- FOOTER START -->
     <footer class="site-footer">
       <div class="container">
         <div class="footer-wrap">
-
+          <a class="logo-footer" href="./index.html">
+            <img src="./images/logo-footer.svg" width="60" height="32" alt="Minimalist site's logo">
+          </a>
+          <ol class="footer-wrap__list">
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__link" href="./index.html">HOME</a>
+            </li>
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__link" href="./portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__link" href="./contact.html">CONTACT ME</a>
+            </li>
+          </ol>
+          <ul class="footer-wrap__icon-list">
+            <li class="footer-wrap__icon-item">
+              <a class="footer-wrap__icon__link" href="#" target="blank">
+                <img src="./images/footer-github.svg" width="25" height="24" alt="Github">
+              </a>
+            </li>
+            <li class="footer-wrap__icon-item">
+              <a class="footer-wrap__icon__link" href="#" target="blank">
+                <img src="./images/footer-twitter.svg" width="24" height="20" alt="Twitter">
+              </a>
+            </li>
+            <li class="footer-wrap__icon-item">
+              <a class="footer-wrap__icon__link" href="#" target="blank">
+                <img src="./images/footer-in.svg" width="24" height="24" alt="Linkedin">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
     <!-- FOOTER END -->
   </main>
 </body>
