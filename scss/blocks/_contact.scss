@@ -75,10 +75,6 @@
     color: var(--white-color);
     background-color: #203A4C;
     @extend %button-unstyle;
-    &:hover{
-        background-color: var(--green-color);
-        transition: all 0.3s ease;
-    }
 }
 
 @media only screen and (min-width: 700px) {
