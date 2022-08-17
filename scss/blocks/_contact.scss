@@ -22,7 +22,7 @@
 }
 
 .contact-wrap__input,
-.contact-wrap__textarea  {
+.contact-wrap__textarea {
     margin-top: 8px;
     padding: 9px 0px 9px 16px;
     font-size: 13px;
@@ -75,12 +75,18 @@
     color: var(--white-color);
     background-color: #203A4C;
     @extend %button-unstyle;
+    &:hover{
+        background-color: var(--green-color);
+        transition: all 0.3s ease;
+    }
 }
-@media only screen and (min-width: 700px){
+
+@media only screen and (min-width: 700px) {
     .contact {
         padding-bottom: 96px;
     }
 }
+
 @media only screen and (min-width: 1024px) {
     .contact {
         padding-bottom: 109px;
